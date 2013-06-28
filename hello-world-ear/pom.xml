@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>examples.hello-world-ear</groupId>
+	<artifactId>hello-world-ear-pom</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+
+    <description>
+        This project is the top-level build
+    </description>
+
+    <properties>
+    </properties>
+
+	<dependencies>
+
+	</dependencies>
+
+	<modules>
+		<module>packaging</module>
+        <module>hello-world-war</module>
+    </modules>
+	
+	<profiles>
+
+	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<repositories>
+
+	</repositories>
+
+	<distributionManagement>
+
+	</distributionManagement>
+</project>
