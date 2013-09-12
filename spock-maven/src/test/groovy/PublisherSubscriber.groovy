@@ -45,9 +45,10 @@ class PublisherSpec extends Specification {
     when:
     pub.send("event")
 
-    then:
-    1 * sub1.receive("event")
-    1 * sub2.receive("event")
+      then:
+      1 * sub2.receive("event")
+      and:
+      1 * sub1.receive("event")
   }
 
   def "can cope with misbehaving subscribers"() {

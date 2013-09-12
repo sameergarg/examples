@@ -29,7 +29,7 @@ import spock.lang.*
 @Stepwise
 class StepwiseExtension extends Specification {
   def "step 1"() {
-    expect: true // try to change this to 'false'
+    expect: false // try to change this to 'false'
   }
 
   def "step 2"() {

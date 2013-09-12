@@ -25,6 +25,6 @@ class HelloSpockSpec extends spock.lang.Specification {
         "The Original Series"  | 19
         "The Animated Series"   | 19
         "The Next Generation" | 19
-        "Deep Space Nine"  | 19
+        "Deep Space Nine"  | 15
     }
 }

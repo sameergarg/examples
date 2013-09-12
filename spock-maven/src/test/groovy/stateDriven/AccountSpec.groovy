@@ -23,7 +23,7 @@ class AccountSpec extends Specification {
         account.withdraw(2.0)
 
         then:
-        account.balance == 3.0
+        account.balance == 2.0
     }
 
     //with documentation blocks
