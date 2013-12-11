@@ -1,4 +1,8 @@
+package bbc
+
+import geb.Browser
 import geb.spock.GebSpec
+import org.openqa.selenium.htmlunit.HtmlUnitDriver
 
 /**
  *
@@ -8,11 +12,21 @@ import geb.spock.GebSpec
  */
 class BBCGebSpec extends GebSpec {
 
+
     def "go to login"() {
         when:
         browser.go "http://www.bbc.co.uk"
 
         then:
         browser.page.title == "BBC - Homepage"
+    }
+
+    /**
+     * Override configuration inside GebConfig
+     * @return
+     */
+    @Override
+    Browser createBrowser() {
+        return new Browser(driver: new HtmlUnitDriver())
     }
 }
