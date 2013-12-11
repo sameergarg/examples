@@ -17,7 +17,8 @@ import org.junit.rules.TestName
 import spock.lang.Specification
 
 class UsingJUnitRules extends Specification {
-  @Rule TestName name
+
+   @Rule TestName name
 
   def "retrieve test name at runtime"() {
     println "entering '$name.methodName'"
