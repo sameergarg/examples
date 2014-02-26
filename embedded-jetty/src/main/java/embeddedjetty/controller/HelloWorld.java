@@ -15,6 +15,6 @@ public class HelloWorld {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseBody
     public String showIndex() {
-        return "Hello world! "+message;
+        return "Hello world!! "+message;
     }
 }

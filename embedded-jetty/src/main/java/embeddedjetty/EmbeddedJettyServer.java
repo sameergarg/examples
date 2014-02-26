@@ -36,6 +36,7 @@ public class EmbeddedJettyServer {
     private void startJetty(int port) throws Exception {
         Server server = new Server(port);
         server.setHandler(getServletContextHandler(getContext()));
+
         server.start();
         server.join();
     }
