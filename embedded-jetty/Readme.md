@@ -1,8 +1,26 @@
-This application demonstrates the use of Embedded Jetty.
-===
-The application can be built with maven, gradle or an IDE by running EnmbeddedJettyServer class
+Embedded jetty webapp
+==
+
+Hello World web application built using Embedded Jetty using Spring and build with Maven and Gradle
 ====
-With maven
+
+System requirements
+=====
+Java 7
+Maven 3
+
+To build with maven
 ==========
+
+Package
+===========
 1. mvn clean package
+Run
+===========
 2. java -jar target/XXX.jar
+
+
+To build with gradle
+==========
+
+
