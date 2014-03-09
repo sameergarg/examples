@@ -1,8 +1,10 @@
-package example.dropwizard;
+package example.dropwizard.service;
 
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
+import example.dropwizard.config.HelloWorldConfiguration;
+import example.dropwizard.resource.HelloWorldResource;
 
 public class HelloWorldService extends Service<HelloWorldConfiguration> {
     public static void main(String[] args) throws Exception {
@@ -17,6 +19,8 @@ public class HelloWorldService extends Service<HelloWorldConfiguration> {
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
-        // nothing to do yet
+        final String template = configuration.getTemplate();
+        final String defaultName = configuration.getDefaultName();
+        environment.addResource(new HelloWorldResource(template, defaultName));
     }
 }
