@@ -46,6 +46,7 @@ public class EmbeddedJettyServer {
         contextHandler.setErrorHandler(null);
         contextHandler.setContextPath(CONTEXT_PATH);
         contextHandler.addServlet(new ServletHolder(new DispatcherServlet(context)), MAPPING_URL);
+
         contextHandler.addEventListener(new ContextLoaderListener(context));
         contextHandler.setResourceBase(new ClassPathResource("webapp").getURI().toString());
         return contextHandler;
