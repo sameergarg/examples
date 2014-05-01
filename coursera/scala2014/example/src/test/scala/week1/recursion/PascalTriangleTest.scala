@@ -1,4 +1,4 @@
-package week1.pascaltriangle
+package week1.recursion
 
 import org.scalatest.{Matchers, FunSuite}
 import Main._
@@ -14,9 +14,9 @@ import org.scalatest.prop.TableDrivenPropertyChecks._
  * Date: 30/04/2014
  * Time: 20:52
  */
-class PascalTest extends FunSuite with Matchers {
+class PascalTriangleTest extends FunSuite with Matchers {
 
-  val pascalTrianglePositionValues = {
+  val pascalTrianglePositionValues =
     Table (
       ("row", "column", "value"),
       (0,0,1) ,
@@ -36,7 +36,7 @@ class PascalTest extends FunSuite with Matchers {
       (4,4,1)
 
     )
-  }
+
 
   test("pascal triangle number at row and column") {
     forAll(pascalTrianglePositionValues) {(row, column, value) =>

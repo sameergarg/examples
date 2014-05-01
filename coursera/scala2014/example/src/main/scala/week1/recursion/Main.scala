@@ -1,4 +1,4 @@
-package week1.pascaltriangle
+package week1.recursion
 
 object Main extends App {
 
@@ -45,9 +45,16 @@ and returns the number at that spot in the triangle. For example, pascal(0,2)=1,
   Do this exercise by implementing the balance function in Main.scala. Its signature is as follows:
    */
   def balance(chars: List[Char]): Boolean = {
-    ???
-  }
+    def loop(chars: List[Char], parentheses: Int): Int = chars match {
+      case Nil => parentheses
+      case ')' :: tail if(parentheses==0) => -1
+      case ')' :: tail => loop(tail, parentheses-1)
+      case '(' :: tail  => loop(tail, parentheses+1)
+      case head :: tail  => loop(tail, parentheses)
+    }
 
+    loop(chars,0) == 0
+  }
   /*
   Write a recursive function that counts how many different ways you can make change for an amount, given a list of coin
   denominations. For example, there are 3 ways to give change for 4 if you have coins with
