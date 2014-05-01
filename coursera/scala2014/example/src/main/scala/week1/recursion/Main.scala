@@ -1,5 +1,7 @@
 package week1.recursion
 
+import scala.annotation.tailrec
+
 object Main extends App {
 
   /*
@@ -45,17 +47,19 @@ and returns the number at that spot in the triangle. For example, pascal(0,2)=1,
   Do this exercise by implementing the balance function in Main.scala. Its signature is as follows:
    */
   def balance(chars: List[Char]): Boolean = {
-    def loop(chars: List[Char], parentheses: Int): Int = chars match {
-      case Nil => parentheses
-      case ')' :: tail if(parentheses==0) => -1
-      case ')' :: tail => loop(tail, parentheses-1)
+    @tailrec
+    def loop(chars: List[Char], parentheses: Int): Boolean = chars match {
+      case Nil => parentheses == 0
+      case ')' :: tail => if(parentheses==0) false else loop(tail, parentheses-1)
       case '(' :: tail  => loop(tail, parentheses+1)
       case head :: tail  => loop(tail, parentheses)
     }
 
-    loop(chars,0) == 0
+    loop(chars,0)
   }
+
   /*
+  Excercise 3: Counting change
   Write a recursive function that counts how many different ways you can make change for an amount, given a list of coin
   denominations. For example, there are 3 ways to give change for 4 if you have coins with
   denomiation 1 and 2: 1+1+1+1, 1+1+2, 2+2.
@@ -70,6 +74,12 @@ Hint: Think of the degenerate cases. How many ways can you give change for 0 CHF
 for >0 CHF, if you have no coins?
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    ???
+
+    def loop(money: Int, coins: List[Int], accumulatedWays:Int): Int = coins match {
+      case Nil => accumulatedWays
+
+    }
+    loop(money, coins, 0)
   }
+
 }
