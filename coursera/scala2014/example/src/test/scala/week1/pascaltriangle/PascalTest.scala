@@ -1,6 +1,6 @@
 package week1.pascaltriangle
 
-import org.scalatest.FunSuite
+import org.scalatest.{Matchers, FunSuite}
 import Main._
 import org.scalatest.prop.TableDrivenPropertyChecks._
 
@@ -38,12 +38,11 @@ class PascalTest extends FunSuite with Matchers {
     )
   }
 
-  test("number at row and column") {
+  test("pascal triangle number at row and column") {
     forAll(pascalTrianglePositionValues) {(row, column, value) =>
       pascal(row, column) should be(value)
     }
   }
-
 
 }
 

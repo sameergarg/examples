@@ -7,7 +7,7 @@ libraryDependencies += "org.scalastyle" %% "scalastyle" % "0.3.2"
 libraryDependencies += "cc.spray" %%  "spray-json" % "1.1.1"
 
 // need scalatest also as a build dependency: the build implements a custom reporter
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1"
+libraryDependencies += "org.scalatest" %% "scalatest_2.11" % "2.1.5"
 
 // dispatch uses commons-codec, in version 1.4, so we can't  go for 1.6.
 // libraryDependencies += "commons-codec" % "commons-codec" % "1.4"
