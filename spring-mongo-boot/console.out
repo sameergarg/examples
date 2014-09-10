@@ -751,3 +751,15 @@ webRequestLoggingFilter
 2014-09-09 17:48:48.046 DEBUG 6358 --- [qtp409191416-22] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search]
 2014-09-09 17:48:48.242 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search
 2014-09-09 17:48:48.244 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search]
+2014-09-10 10:29:19.776 DEBUG 6358 --- [qtp409191416-22] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search/findByFirstName{
+2014-09-10 10:29:19.777 DEBUG 6358 --- [qtp409191416-22] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search/findByFirstName{]
+2014-09-10 10:29:20.008 DEBUG 6358 --- [qtp409191416-23] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search/findByFirstName{
+2014-09-10 10:29:20.009 DEBUG 6358 --- [qtp409191416-23] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search/findByFirstName{]
+2014-09-10 10:29:32.907 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search/findByFirstName
+2014-09-10 10:29:32.908 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search/findByFirstName]
+2014-09-10 10:29:33.045 DEBUG 6358 --- [qtp409191416-22] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search/findByFirstName
+2014-09-10 10:29:33.045 DEBUG 6358 --- [qtp409191416-22] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search/findByFirstName]
+2014-09-10 10:29:39.081 DEBUG 6358 --- [qtp409191416-21] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search/findByFirstName{
+2014-09-10 10:29:39.082 DEBUG 6358 --- [qtp409191416-21] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search/findByFirstName{]
+2014-09-10 10:29:40.000 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Looking up handler method for path /customer/search
+2014-09-10 10:29:40.001 DEBUG 6358 --- [qtp409191416-20] o.s.b.a.e.mvc.EndpointHandlerMapping     : Did not find handler method for [/customer/search]

@@ -17,6 +17,7 @@ public class Customer {
     private String createdOn;
 
     public Customer() {
+        this.createdOn = new SimpleDateFormat("dd.MM.yyyy 'at' HH:mm:ss z").format(new Date());
     }
 
     public Customer(String firstName, String lastName) {

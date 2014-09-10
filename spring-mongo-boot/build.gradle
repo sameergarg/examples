@@ -41,6 +41,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
 
     // end::actuator[]
+
+    //logging
+    compile("org.springframework.boot:spring-boot-starter-logging")
+
     testCompile("junit:junit")
 }
 

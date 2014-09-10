@@ -15,7 +15,6 @@ import java.util.Arrays;
 
 @Configuration
 @EnableAutoConfiguration()
-//@EnableAutoConfiguration(exclude = {MongoRepositoriesAutoConfiguration.class, DataSourceAutoConfiguration.class})
 @ComponentScan
 @EnableMongoRepositories
 @Import(RepositoryRestMvcConfiguration.class)
